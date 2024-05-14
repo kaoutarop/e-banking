@@ -1,0 +1,25 @@
+<h1>Compte rendu</h1>
+<h3> de la partie backend (Entities, Repositories, DTOs, Mapper, Service, RestControllers)</h3>
+<img src="Captures/menu.png">
+<img src="Captures/accoun.png)">
+<img src="Captures/currenet.png">
+<img src="Captures/customer.png">
+<img src="Captures/img.png">
+<img src="Captures/img_1.png">
+<img src="Captures/img_2.png">
+<img src="Captures/img_3.png">
+<img src="Captures/img_4.png">
+<img src="Captures/img_5.png">
+<img src="Captures/img_6.png">
+<img src="Captures/img_8.png">
+<img src="Captures/img_9.png">
+<img src="Captures/img_10.png">
+<img src="Captures/img_11.png">
+<img src="Captures/img_12.png">
+<img src="Captures/impl.png">
+<img src="Captures/operation.png">
+<img src="Captures/repo.png">
+<img src="Captures/saving.png">
+<img src="Captures/service.png">
+<img src="Captures/jsonh.png">
+<img src="Captures/koutarjson.png">
