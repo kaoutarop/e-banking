@@ -1,18 +1,32 @@
 package com.example.ebankingbackend.web;
 
-import com.example.ebankingbackend.dtos.AccountHistoryDTO;
-import com.example.ebankingbackend.dtos.CreditDTO;
-import com.example.ebankingbackend.dtos.DebitDTO;
-import com.example.ebankingbackend.dtos.TransferRequestDTO;
+import com.example.ebankingbackend.dtos.*;
 import com.example.ebankingbackend.exceptions.BalanceNotSufficientException;
 import com.example.ebankingbackend.exceptions.BankAccountNotFoundException;
 import com.example.ebankingbackend.services.BankAccountService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin("*")
 public class BankAccountRestAPI {
     private BankAccountService bankAccountService;
+    public BankAccountRestAPI(BankAccountService bankAccountService){
+        this.bankAccountService=bankAccountService;
+    }
+    @GetMapping ("/accounts/{accountId}")
+    public BankAccountDTO getBankAccount(@PathVariable String accountId) throws BankAccountNotFoundException {
+        return bankAccountService.getBankAccount(accountId);
+    }
+    @GetMapping("/accounts")
+    public List<BankAccountDTO> listAccounts(){
+        return bankAccountService.bankAccountList();
+    }
+    @GetMapping("/accounts/{accountId}/operations")
+    public List<AccountOperationDTO> getHistory(@PathVariable String accountId){
+        return bankAccountService.accountHistory(accountId);
+    }
 
     @GetMapping("/accounts/{accountId}/pageOperations")
     public AccountHistoryDTO getAccountHistory(
