@@ -21,5 +21,5 @@
 <img src="Captures/repo.png">
 <img src="Captures/saving.png">
 <img src="Captures/service.png">
-<img src="Captures/jsonh.png">
-<img src="Captures/koutarjson.png">
+<img src="Captures/cap2.png">
+<img src="Captures/capupdate.png">
